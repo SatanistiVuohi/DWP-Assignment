@@ -1,13 +1,14 @@
+// App.jsx
+import { Header } from './ComponentUI';
 
-import ComponentUI from './ComponentUI'
-import OrderForm from './OrderForm'
-import OrderInfo from './OrderInfo'
 
 function App() {
-
   return (
+    <div>
+      <Header />
 
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
