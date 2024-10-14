@@ -1,5 +1,6 @@
+import { Order } from './OrderInfo';
 
-function OrderForm() {
+function ProductSelection() {
     const products = [
       { name: "AMD Ryzen 5 5600", price: 110 },
       { name: "AMD Ryzen 7 7600", price: 215 },
@@ -28,4 +29,4 @@ function OrderForm() {
     )
   }
 
-export default OrderForm;
+export default ProductSelection;

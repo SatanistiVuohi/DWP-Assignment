@@ -1,12 +1,11 @@
-// App.jsx
 import { Header } from './ComponentUI';
-import OrderForm from './OrderForm';
+import { ProductSelection } from './ComponentUI';
 
 function App() {
   return (
     <div>
       <Header />
-      <OrderForm />
+      <ProductSelection />
     </div>
   );
 }

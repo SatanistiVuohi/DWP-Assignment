@@ -1,6 +1,4 @@
-// ComponentUI.jsx
-import React from 'react';
-import logo from './assets/logo.png'; // You can adjust the path if necessary.
+import logo from './assets/logo.png';
 
 function Header() {
   return (
