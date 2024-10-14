@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from './assets/logo.png'; // You can adjust the path if necessary.
 
-export function Header() {
+function Header() {
   return (
     <header style={headerStyle.header}>
       <img src={logo} alt="logo" style={headerStyle.image} />
