@@ -1,4 +1,4 @@
-import { Order } from './OrderInfo';
+
 
 function ProductSelection() {
     const products = [
