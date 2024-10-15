@@ -18,11 +18,11 @@ function ProductSelection() {
     };
 
     const increaseQuantity = () => {
-        setQuantity(quantity + 1);
+        setQuantity((prevQuantity) => prevQuantity + 1);
     }
 
     const decreaseQuantity = () => {
-        setQuantity(quantity - 1);
+        setQuantity((prevQuantity) => Math.max (0, prevQuantity - 1));
     }
 
     return (
