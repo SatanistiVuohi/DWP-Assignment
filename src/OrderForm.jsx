@@ -9,6 +9,7 @@ function ProductSelection() {
     ];
     
     const [selectedProduct, setSelectedProduct] = useState(products[0]);
+    const [quantity, setQuantity] = useState(1);
 
     const changeProducts = (e) => {
         const selectedName = e.target.value;
@@ -16,13 +17,20 @@ function ProductSelection() {
         setSelectedProduct(product);
     };
 
+    const increaseQuantity = () => {
+        setQuantity(quantity + 1);
+    }
+
+    const decreaseQuantity = () => {
+        setQuantity(quantity - 1);
+    }
+
     return (
       <div>
         <h3>Select product</h3>
         <label>
           <span>Product: </span>
           <select value={selectedProduct.name} onChange={changeProducts}>
-            <option value="">Select product</option>
             {products.map((p) => (
                 <option key={p.name} value={p.name}>
                     {p.name + " (" + p.price + "€)"}
@@ -34,9 +42,9 @@ function ProductSelection() {
         <br />
   
         <span>Quantity: </span>
-        <button>-</button>
-        <span></span>
-        <button>+</button>
+        <button onClick={decreaseQuantity}>-</button>
+        <span>{quantity}</span>
+        <button onClick={increaseQuantity}>+</button>
       </div>
     )
   }
