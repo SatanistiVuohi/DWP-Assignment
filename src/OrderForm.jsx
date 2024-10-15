@@ -45,10 +45,9 @@ function ProductSelection() {
         </select>
       </label>
       <br />
-
       <span>Quantity: </span>
       <button onClick={decreaseQuantity}>-</button>
-      <span>{quantity}</span>
+      <span> {quantity} </span>
       <button onClick={increaseQuantity}>+</button>
 
       <Order selectedProduct={selectedProduct} quantity={quantity} />
