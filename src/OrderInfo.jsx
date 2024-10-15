@@ -1,6 +1,6 @@
 
 
-function Order() {
+function Order({selectedProduct, quantity}) {
     return (
       <div>
         <h3>Order info</h3>
@@ -14,9 +14,9 @@ function Order() {
           </thead>
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>{selectedProduct.name}</td>
+              <td>{quantity}</td>
+              <td>{selectedProduct.price * quantity + " €"}</td>
             </tr>
           </tbody>
         </table>

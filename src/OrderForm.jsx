@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Order from "./OrderInfo";
+
 
 
 function ProductSelection() {
@@ -45,6 +47,8 @@ function ProductSelection() {
         <button onClick={decreaseQuantity}>-</button>
         <span>{quantity}</span>
         <button onClick={increaseQuantity}>+</button>
+
+        <Order selectedProduct={selectedProduct} quantity={quantity} />
       </div>
     )
   }
