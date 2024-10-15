@@ -8,6 +8,9 @@ function ProductSelection() {
     { name: "AMD Ryzen 5 5600", price: 110 },
     { name: "AMD Ryzen 7 7600", price: 215 },
     { name: "AMD Ryzen 9 9600", price: 320 },
+    { name: "AMD Radeon RX 6800 XT", price: 649 },
+    { name: "AMD Radeon RX 6700 XT", price: 479 },
+    { name: "AMD Radeon RX 6600 XT", price: 379 }
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
