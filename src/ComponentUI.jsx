@@ -1,4 +1,5 @@
 import logo from './assets/logo.png';
+import ProductSelection from './OrderForm';
 
 function Header() {
   return (
@@ -6,18 +7,30 @@ function Header() {
       <img src={logo} alt="logo" style={headerStyle.image} />
       <h1>Welcome to product page!</h1>
     </header>
+
+
   );
 }
 
 const headerStyle = {
-    header: {
-        display: 'flex',
-        alignItems: 'center'
-    },
-    image: {
-        width: '75px',
-        height: '75px'
-    }
+  header: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  image: {
+    width: '75px',
+    height: '75px'
+  }
 }
 
-export default Header;
+function Structure() {
+  return (
+    <div>
+      <Header />
+      <ProductSelection />
+    </div>
+  )
+}
+
+
+export default Structure;

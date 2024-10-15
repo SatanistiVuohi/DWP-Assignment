@@ -1,11 +1,10 @@
-import Header from "./ComponentUI";
-import ProductSelection from "./OrderForm";
+import Structure from "./ComponentUI";
+
 
 function App() {
   return (
     <div>
-      <Header />
-      <ProductSelection />
+      <Structure />
     </div>
   );
 }
