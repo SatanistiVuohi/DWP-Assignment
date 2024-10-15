@@ -7,7 +7,7 @@ function App() {
     <div>
       <Header />
       <ProductSelection />
-    <Order/>
+      <Order />
     </div>
   );
 }
