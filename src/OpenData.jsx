@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 function Trivia() {
 
@@ -53,6 +54,11 @@ function Trivia() {
         }
     }
 
+    const navigate = useNavigate();
+    const goToComponent = () => {
+        navigate('/');
+    }
+
     return (
         <div>
             <h2>Get a random number and a fact about it!</h2>
@@ -70,6 +76,11 @@ function Trivia() {
             {selectedCategory === 'date' && date}
             {selectedCategory === 'math' && math}
             </p>
+            <br />
+            <br />
+            <br />
+            
+            <button onClick={goToComponent}>Components!</button>
         </div>
     )
 };

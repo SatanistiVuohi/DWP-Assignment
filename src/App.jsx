@@ -1,19 +1,9 @@
-import Structure from "./ComponentUI";
-import Trivia from "./OpenData";
+import NavigationBar from "./routing";
 
 
 function App() {
   return (
-    <div>
-      <Structure />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Trivia />
-    </div>
+      <NavigationBar />
   );
 }
 
