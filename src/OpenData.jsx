@@ -64,22 +64,21 @@ function Trivia() {
             <h2>Get a random number and a fact about it!</h2>
             <span>Select category: </span>
             <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
-            <option value="" disabled>Select a category</option>
+                <option value="" disabled>Select a category</option>
                 {categories.map((category) => (
                     <option key={category.value} value={category.value}>{category.name}</option>
                 ))}
-            </select> 
+            </select>
 
             <button onClick={handleTrivia}>Gimme facts!</button>
             <p>{selectedCategory === 'trivia' && trivia}
-            {selectedCategory === 'year' && year}
-            {selectedCategory === 'date' && date}
-            {selectedCategory === 'math' && math}
+                {selectedCategory === 'year' && year}
+                {selectedCategory === 'date' && date}
+                {selectedCategory === 'math' && math}
             </p>
             <br />
             <br />
             <br />
-            
             <button onClick={goToComponent}>Components!</button>
         </div>
     )

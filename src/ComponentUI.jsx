@@ -2,15 +2,12 @@ import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo.png';
 import ProductSelection from './OrderForm';
 
-
 function Header() {
   return (
     <header style={headerStyle.header}>
       <img src={logo} alt="logo" style={headerStyle.image} />
       <h1>Welcome to product page!</h1>
     </header>
-
-
   );
 }
 
@@ -44,6 +41,5 @@ function Structure() {
     </div>
   )
 }
-
 
 export default Structure;

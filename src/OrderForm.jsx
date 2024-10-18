@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Order from "./OrderInfo";
 
-
-
 function ProductSelection() {
   const products = [
     { name: "AMD Ryzen 5 5600", price: 110 },
@@ -54,5 +52,4 @@ function ProductSelection() {
     </div>
   )
 }
-
 export default ProductSelection;

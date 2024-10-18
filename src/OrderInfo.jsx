@@ -1,5 +1,3 @@
-
-
 function Order({ selectedProduct, quantity }) {
   return (
     <div>

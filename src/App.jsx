@@ -1,10 +1,8 @@
 import NavigationBar from "./routing";
 
-
 function App() {
   return (
-      <NavigationBar />
+    <NavigationBar />
   );
 }
-
 export default App;
