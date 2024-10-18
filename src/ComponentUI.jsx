@@ -1,5 +1,7 @@
+import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo.png';
 import ProductSelection from './OrderForm';
+
 
 function Header() {
   return (
@@ -24,10 +26,21 @@ const headerStyle = {
 }
 
 function Structure() {
+
+  const navigate = useNavigate();
+
+  const goToTrivia = () => {
+    navigate('/trivia');
+  };
+
   return (
     <div>
       <Header />
       <ProductSelection />
+      <br />
+      <br />
+      <br />
+      <button onClick={goToTrivia}>Open data!</button>
     </div>
   )
 }
